@@ -244,6 +244,10 @@
         "source": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
     },
     {
+        "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\drawable_globe.png.flat",
+        "source": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\src\\main\\res\\drawable\\globe.png"
+    },
+    {
         "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "C:\\Users\\stana\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\afb7f24155e2b27cced34a7ba292eedd\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
@@ -334,6 +338,10 @@
     {
         "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\drawable_arrow_drop_up.png.flat",
+        "source": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\src\\main\\res\\drawable\\arrow_drop_up.png"
     },
     {
         "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_icon_group.xml.flat",
@@ -532,6 +540,10 @@
         "source": "C:\\Users\\stana\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\afb7f24155e2b27cced34a7ba292eedd\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
+        "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\drawable_roundbutton.xml.flat",
+        "source": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\src\\main\\res\\drawable\\roundbutton.xml"
+    },
+    {
         "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\stana\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\afb7f24155e2b27cced34a7ba292eedd\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
@@ -658,6 +670,10 @@
     {
         "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_in.xml.flat",
         "source": "C:\\Users\\stana\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\afb7f24155e2b27cced34a7ba292eedd\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\drawable_splash_screen.png.flat",
+        "source": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\src\\main\\res\\drawable\\splash_screen.png"
     },
     {
         "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -794,6 +810,10 @@
     {
         "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
         "source": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\layout_spinner_item.xml.flat",
+        "source": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\src\\main\\res\\layout\\spinner_item.xml"
     },
     {
         "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -1208,6 +1228,10 @@
         "source": "C:\\Users\\stana\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\afb7f24155e2b27cced34a7ba292eedd\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
+        "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\drawable_roundspinner.xml.flat",
+        "source": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\src\\main\\res\\drawable\\roundspinner.xml"
+    },
+    {
         "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_go_search_api_material.xml.flat",
         "source": "C:\\Users\\stana\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\afb7f24155e2b27cced34a7ba292eedd\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
@@ -1434,6 +1458,10 @@
     {
         "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\stana\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\afb7f24155e2b27cced34a7ba292eedd\\res\\drawable-mdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\layout_language_layout.xml.flat",
+        "source": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\src\\main\\res\\layout\\language_layout.xml"
     },
     {
         "merged": "E:\\Android Studio\\AndroidStudioProjects\\Vaktmester\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",

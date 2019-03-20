@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF063b5b">
+
+    <TextView
+        android:id="@+id/textViewChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="91dp"
+        android:width="156dp"
+        android:height="64dp"
+        android:gravity="center"
+        android:text="@string/language_text_view_choose"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+        <ImageView android:id="@+id/imageViewGlobe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/globe"
+            android:layout_below="@+id/textViewChoose"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="49dp"/>
+
+
+
+
+    <FrameLayout android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/imageViewGlobe"
+        android:layout_centerHorizontal="true">
+
+        <Spinner android:id="@+id/languageSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundspinner"
+            android:layout_below="@+id/imageViewGlobe"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="13dp">
+
+        </Spinner>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_drop_up"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="15.5dp"/>
+    </FrameLayout>
+    
+    <Button android:id="@+id/buttonConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:background="@drawable/roundbutton"
+        android:text="confirm"
+        android:layout_below="@+id/frameLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48.5dp"/>
+
+
+</RelativeLayout>

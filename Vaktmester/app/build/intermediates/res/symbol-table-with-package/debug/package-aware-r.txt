@@ -11,6 +11,7 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+array SpinnerLanguages
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -628,6 +629,8 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable arrow_drop_up
+drawable globe
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable notification_action_background
@@ -642,6 +645,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable roundbutton
+drawable roundspinner
+drawable splash_screen
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -678,6 +684,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id buttonConfirm
 id buttonPanel
 id center
 id center_horizontal
@@ -705,6 +712,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id forever
+id frameLayout
 id gone
 id group_divider
 id groups
@@ -714,9 +722,11 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageViewGlobe
 id info
 id invisible
 id italic
+id languageSpinner
 id left
 id line1
 id line3
@@ -779,6 +789,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textViewChoose
 id time
 id title
 id titleDividerNoCustom
@@ -825,6 +836,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_loading
+layout language_layout
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -834,6 +846,7 @@ layout notification_template_part_time
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout spinner_item
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -877,6 +890,7 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
+string language_text_view_choose
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
