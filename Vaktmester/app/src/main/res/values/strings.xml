@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Vaktmester</string>
     <string name="language_text_view_choose">Choose your language</string>
+    <string name="button_confirm">confirm</string>
 
     <string-array name="SpinnerLanguages">
         <item> Serbian </item>

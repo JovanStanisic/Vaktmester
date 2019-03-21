@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF063b5b">
+    android:background="@color/Blue">
 
     <TextView
         android:id="@+id/textViewChoose"
@@ -23,7 +23,7 @@
         <ImageView android:id="@+id/imageViewGlobe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/globe"
+            android:src="@drawable/noun_1642355_cc"
             android:layout_below="@+id/textViewChoose"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="49dp"/>
@@ -61,7 +61,7 @@
         android:layout_height="wrap_content"
         android:textColor="#fff"
         android:background="@drawable/roundbutton"
-        android:text="confirm"
+        android:text="@string/button_confirm"
         android:layout_below="@+id/frameLayout"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="48.5dp"/>
