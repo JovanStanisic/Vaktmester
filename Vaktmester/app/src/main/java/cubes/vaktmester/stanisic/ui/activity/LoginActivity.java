@@ -32,6 +32,14 @@ public class LoginActivity extends AppCompatActivity {
 
     private void addListener() {
 
+        buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                finish();
+            }
+        });
+
         forgotPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
