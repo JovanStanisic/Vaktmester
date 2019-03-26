@@ -11,18 +11,19 @@ import cubes.vaktmester.stanisic.data.SharedPrefs;
 
 public class LoadingActivity extends Activity {
         private Handler handler = new Handler();
-        private SharedPreferences prefs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loading);
 
-        prefs = getSharedPreferences(getString(R.string.app_name),MODE_PRIVATE);
-
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         try {
+
+                            //proveravam da li je jezik vec izabran
+                            // ako jeste, preskace se ekran za biranje jezika i ide se pravo na login ekran
+
                             if (SharedPrefs.isFirstTime(LoadingActivity.this)){
                                 Intent intent = new Intent(getApplicationContext(), ChooseLanguageActivity.class);
                                 startActivity(intent);
@@ -30,6 +31,7 @@ public class LoadingActivity extends Activity {
                             }
                             else{
                                 startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+                                finish();
                             }
                         }
                         catch (Exception e){
@@ -37,12 +39,5 @@ public class LoadingActivity extends Activity {
                         }
                     }
                 },3000);
-
-
-                // default value je true, jer ako nije setovan jezik
-                // izaci ce ekran za biranje jezika
-
-
-
     }
 }

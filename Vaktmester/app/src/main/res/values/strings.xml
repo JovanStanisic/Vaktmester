@@ -2,10 +2,12 @@
     <string name="app_name">Vaktmester</string>
     <string name="language_text_view_choose">Choose your language</string>
     <string name="button_confirm">confirm</string>
+    <string name="edit_text_username">Username</string>
+    <string name="edit_text_password">Password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="button_login">log in</string>
+    <string name="textview_forgot_pass">Forgot your password?</string>
+    <string name="hint_email">Your email adress</string>
+    <string name="forgot_pass_confirm">Confirm</string>
 
-    <string-array name="SpinnerLanguages">
-        <item> Serbian </item>
-        <item> Norwegian </item>
-        <item> English </item>
-    </string-array>
 </resources>

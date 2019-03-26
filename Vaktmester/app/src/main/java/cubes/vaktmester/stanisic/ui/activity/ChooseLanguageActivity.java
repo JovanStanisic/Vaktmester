@@ -13,11 +13,11 @@ import android.widget.TextView;
 
 import cubes.vaktmester.stanisic.R;
 import cubes.vaktmester.stanisic.data.SharedPrefs;
+import cubes.vaktmester.stanisic.ui.adapter.LanguageAdapter;
 
 public class ChooseLanguageActivity extends Activity {
         private TextView textViewChooseLanguage;
         private Spinner spinner;
-        private ArrayAdapter<CharSequence> spinnerAdapter;
         private Button confirmButton;
 
         @Override
@@ -28,7 +28,6 @@ public class ChooseLanguageActivity extends Activity {
         initComp();
         addListener();
         
-        initSpinner();
     }
 
     private void addListener() {
@@ -42,19 +41,13 @@ public class ChooseLanguageActivity extends Activity {
         });
     }
 
-
-
-    private void initSpinner() {
-
-            // inicijalizujem spinner za odabir jezika
-
-        spinnerAdapter = ArrayAdapter.createFromResource(this, R.array.SpinnerLanguages,R.layout.spinner_item);
-        spinnerAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
-        spinner.setAdapter(spinnerAdapter);
-    }
-
     private void initComp() {
+
+        // incijalizujem spinner i setujem adapter
+
         spinner = findViewById(R.id.languageSpinner);
+        spinner.setAdapter(new LanguageAdapter(getApplicationContext()));
+
         textViewChooseLanguage = findViewById(R.id.textViewChoose);
         confirmButton = findViewById(R.id.buttonConfirm);
     }
