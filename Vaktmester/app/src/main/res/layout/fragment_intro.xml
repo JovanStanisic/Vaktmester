@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Blue">
+    
+    <TextView android:id="@+id/textViewPager1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:layout_marginTop="70dp"/>
+    
+    <ImageView android:id="@+id/imageViewPager"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textViewPager1"
+        android:src="@drawable/welcome_page"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="22dp"/>
+
+    <TextView android:id="@+id/textViewPagerDesc"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageViewPager"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        android:lines="2"/>
+
+</RelativeLayout>

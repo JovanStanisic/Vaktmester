@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/textForgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:text="@string/textview_forgot_pass"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_margin="41dp"/>
+
+    <EditText android:id="@+id/editTextEmail"
+        android:layout_width="186dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/roundspinner"
+        android:hint="@string/hint_email"
+        android:textColorHint="@color/white"/>
+
+    <Button android:id="@+id/buttonConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:text="@string/forgot_pass_confirm"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"/>
+
+        <TextView android:id="@+id/textViewAllSet"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:inputType="textMultiLine"
+            android:gravity="center" />
+
+
+
+
+</LinearLayout>

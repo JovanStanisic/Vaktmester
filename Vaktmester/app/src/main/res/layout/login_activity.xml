@@ -1,6 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v4.view.ViewPager android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="275dp">
+    </android.support.v4.view.ViewPager>
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="31dp">
+
+        <ImageView android:id="@+id/emptyOval1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/oval_empty"
+            android:layout_gravity="left"/>
+
+        <ImageView android:id="@+id/emptyOval2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/oval_empty"
+            android:layout_gravity="center"/>
+
+        <ImageView android:id="@+id/emptyOval3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/oval_empty"
+            android:layout_gravity="right"/>
+
+        <ImageView android:id="@+id/fullOval1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/oval_full"
+            android:layout_gravity="left"/>
+
+        <ImageView android:id="@+id/fullOval2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/oval_full"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+
+        <ImageView android:id="@+id/fullOval3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/oval_full"
+            android:layout_gravity="right"
+            android:visibility="invisible"/>
+
+
+    </FrameLayout>
+
+<EditText android:id="@+id/editTextUser"
+    android:layout_width="186dp"
+    android:layout_height="46dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textSize="16sp"
+    android:textColor="@color/white"
+    android:background="@drawable/roundspinner"
+    android:hint="@string/edit_text_username"
+    android:textColorHint="@color/white"
+    android:layout_marginBottom="21dp" />
+
+    <EditText android:id="@+id/editTextPass"
+        android:layout_width="186dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/roundspinner"
+        android:hint="@string/edit_text_password"
+        android:textColorHint="@color/white"/>
+
+    <TextView android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/blueGrayish"
+        android:text="@string/forgot_your_password"/>
+
+    <Button android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:text="@string/button_login"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"/>
+
+</LinearLayout>
