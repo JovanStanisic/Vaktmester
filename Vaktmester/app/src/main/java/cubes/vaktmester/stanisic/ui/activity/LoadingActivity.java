@@ -38,6 +38,6 @@ public class LoadingActivity extends Activity {
                             e.printStackTrace();
                         }
                     }
-                },3000);
+                },1000);
     }
 }

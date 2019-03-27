@@ -9,16 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.LoadingActivity">
+        <activity android:name=".ui.activity.LoadingActivity"  android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.ChooseLanguageActivity" />
-        <activity android:name=".ui.activity.LoginActivity" />
-        <activity android:name=".ui.activity.ForgotPassActivity" />
+        <activity android:name=".ui.activity.ChooseLanguageActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.ForgotPassActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.HomeActivity" android:screenOrientation="portrait" />
     </application>
 
 </manifest>

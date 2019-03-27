@@ -60,9 +60,11 @@
     </FrameLayout>
 
 <EditText android:id="@+id/editTextUser"
-    android:layout_width="186dp"
+    android:layout_width="match_parent"
     android:layout_height="46dp"
     android:layout_gravity="center"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
     android:gravity="center"
     android:textSize="16sp"
     android:textColor="@color/white"
@@ -72,9 +74,11 @@
     android:layout_marginBottom="21dp" />
 
     <EditText android:id="@+id/editTextPass"
-        android:layout_width="186dp"
+        android:layout_width="match_parent"
         android:layout_height="46dp"
         android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:gravity="center"
         android:textSize="16sp"
         android:textColor="@color/white"

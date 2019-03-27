@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="221dp"
+        android:layout_height="247dp"
+         android:layout_centerInParent="true">
+
+        <RelativeLayout android:id="@+id/relativeLayoutBuildings"
+            android:layout_width="90dp"
+            android:layout_height="100dp">
+
+            <ImageView android:id="@+id/imageViewBuilding"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/building"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"/>
+
+            <TextView android:id="@+id/textViewBuilding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/home_buildings"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@+id/imageViewBuilding"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="12dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/relativeLayoutSheet"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right">
+
+            <TextView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="2"
+                android:textSize="9dp"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:background="@drawable/badge"
+                android:textColor="@color/white"/>
+
+
+            <ImageView android:id="@+id/imageViewSheet"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:src="@drawable/list"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"/>
+
+            <TextView android:id="@+id/textViewSheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/home_timesheet"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@+id/imageViewSheet"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="12dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/relativeLayoutTickets"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right|bottom">
+
+            <TextView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="2"
+                android:textSize="9dp"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:background="@drawable/badge"
+                android:textColor="@color/white"/>
+
+
+            <ImageView android:id="@+id/imageViewChat"
+                android:layout_width="60dp"
+                android:layout_height="53dp"
+                android:src="@drawable/chat_message"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"/>
+
+            <TextView android:id="@+id/textViewChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/home_chat"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@+id/imageViewChat"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="13dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/relativeLayoutChat"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:layout_gravity="left|bottom">
+
+            <ImageView android:id="@+id/imageViewTickets"
+                android:layout_width="60dp"
+                android:layout_height="53dp"
+                android:src="@drawable/check_list"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"/>
+
+            <TextView android:id="@+id/textViewTickets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/home_tickets"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@+id/imageViewTickets"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="13dp"/>
+
+        </RelativeLayout>
+
+
+
+    </FrameLayout>
+
+<ImageView android:id="@+id/imageViewMore"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:src="@drawable/more"
+    android:layout_marginRight="14dp"
+    android:layout_marginTop="14dp"
+    android:layout_alignParentRight="true"/>
+
+    <TextView android:id="@+id/textViewVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blueGrayish"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:text="@string/home_version"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"/>
+
+
+
+</RelativeLayout>
+
+

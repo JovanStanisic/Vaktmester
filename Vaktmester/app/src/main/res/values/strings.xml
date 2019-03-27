@@ -9,5 +9,14 @@
     <string name="textview_forgot_pass">Forgot your password?</string>
     <string name="hint_email">Your email adress</string>
     <string name="forgot_pass_confirm">Confirm</string>
+    <string name="home_buildings">Buildings</string>
+    <string name="home_timesheet">Timesheet</string>
+    <string name="home_chat">Chat</string>
+    <string name="home_tickets">Tickets</string>
+    <string name="home_version">Version:</string>
+    <string name="popup_profile">Profile</string>
+    <string name="popup_change_password">Change Password</string>
+    <string name="popup_change_language">Change Language</string>
+    <string name="popup_logout">Logout</string>
 
 </resources>
