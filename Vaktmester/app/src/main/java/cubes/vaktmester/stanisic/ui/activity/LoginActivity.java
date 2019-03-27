@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import cubes.vaktmester.stanisic.R;
+import cubes.vaktmester.stanisic.animations.DepthTransformation;
 import cubes.vaktmester.stanisic.ui.adapter.IntroPagerAdapter;
 
 public class LoginActivity extends AppCompatActivity {
@@ -28,6 +29,7 @@ public class LoginActivity extends AppCompatActivity {
 
         initComp();
         addListener();
+        viewPager.setPageTransformer(true, new DepthTransformation());
     }
 
     private void addListener() {

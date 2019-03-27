@@ -21,11 +21,11 @@ public class IntroPagerAdapter extends FragmentPagerAdapter {
         // sa odredjenim parametrima u konstruktoru
         switch (i) {
             case 1:
-                return new IntroFragment("Title One", R.drawable.page_two, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",i);
+               return IntroFragment.getInstance("Title One","Lorem ipsum dolor sit amet, consectetur adipiscing elit.", R.drawable.page_two, i);
             case 2:
-                return new IntroFragment("Title Two", R.drawable.page_three, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",i);
+                return  IntroFragment.getInstance("Title Two","Lorem ipsum dolor sit amet, consectetur adipiscing elit.", R.drawable.page_three, i);
             default:
-                return new IntroFragment("Welcome to", R.drawable.welcome_page, "",i);
+               return IntroFragment.getInstance("Welcome to","", R.drawable.welcome_page, i);
         }
     }
 

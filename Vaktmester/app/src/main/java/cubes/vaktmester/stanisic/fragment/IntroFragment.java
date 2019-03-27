@@ -14,7 +14,6 @@ import android.widget.TextView;
 
 import cubes.vaktmester.stanisic.R;
 
-@SuppressLint("ValidFragment")
 public class IntroFragment extends Fragment {
 
     public TextView textTitle, textDescription;
@@ -25,14 +24,17 @@ public class IntroFragment extends Fragment {
     private String textViewTitle, textViewDesc;
     private int image,position;
 
-    @SuppressLint("ValidFragment")
-    public IntroFragment(String textView, int imageView, String textDescription, int position){
-        textViewTitle = textView;
-        textViewDesc = textDescription;
-        image = imageView;
-        this.position = position;
-    }
+    public static IntroFragment getInstance(String title, String desc, int image, int position){
 
+        IntroFragment introFragment = new IntroFragment();
+
+        introFragment.textViewTitle = title;
+        introFragment.textViewDesc = desc;
+        introFragment.image = image;
+        introFragment.position = position;
+
+        return introFragment;
+    }
 
     @Nullable
     @Override
