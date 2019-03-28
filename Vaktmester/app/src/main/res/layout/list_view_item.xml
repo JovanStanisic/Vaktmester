@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue">
+
+    <FrameLayout android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView android:id="@+id/listItemImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/bitmap"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="23dp"/>
+
+        <TextView android:id="@+id/textViewTasks"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="@string/list_item_tasks"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:background="@drawable/orange_text_view"
+            android:gravity="center"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"/>
+    </FrameLayout>
+    
+
+
+    <TextView android:id="@+id/textViewBuildingName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/list_item_building_name"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"/>
+
+    <TextView android:id="@+id/textViewBuildingAdress"
+        android:layout_width="225dp"
+        android:layout_height="38dp"
+        android:text="@string/list_item_adress"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:lines="2"
+        android:layout_below="@+id/textViewBuildingName"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="4dp"/>
+
+</RelativeLayout>

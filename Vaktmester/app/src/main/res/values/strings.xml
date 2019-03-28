@@ -18,5 +18,10 @@
     <string name="popup_change_password">Change Password</string>
     <string name="popup_change_language">Change Language</string>
     <string name="popup_logout">Logout</string>
+    <string name="buildings_text_view">Buildings</string>
+    <string name="buildings_search_edit_text">Search</string>
+    <string name="list_item_building_name">Building name</string>
+    <string name="list_item_tasks">2 tasks</string>
+    <string name="list_item_adress">Bul. Mihajla Pupina 183,Novi Beograd</string>
 
 </resources>
