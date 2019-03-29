@@ -1,6 +1,8 @@
 package cubes.vaktmester.stanisic.data;
 
-public class Building {
+import java.io.Serializable;
+
+public class Building implements Serializable {
 
     public int id;
     public String adress;
@@ -21,6 +23,9 @@ public class Building {
         this.buildingName = buildingName;
         this.image = image;
         this.tasksCount = tasksCount;
+        notes = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using It is a long established fact that a reader will be distracted by the readable content established fact that a reader…";
+        contactName = "Marko Markovic";
+        contactPhone = "+381 011 2425 242";
     }
 
 

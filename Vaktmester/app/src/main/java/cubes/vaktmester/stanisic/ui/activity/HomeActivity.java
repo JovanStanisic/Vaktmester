@@ -1,5 +1,6 @@
 package cubes.vaktmester.stanisic.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -41,6 +42,13 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void addListener() {
+
+        relativeLayoutBuildings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity( new Intent(HomeActivity.this, BuildingListView.class));
+            }
+        });
 
         imageViewMenu.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import cubes.vaktmester.stanisic.R;
 import cubes.vaktmester.stanisic.data.Building;
 
 public class BuildingsAdapter extends BaseAdapter {

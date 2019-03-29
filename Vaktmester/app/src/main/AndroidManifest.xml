@@ -20,6 +20,9 @@
         <activity android:name=".ui.activity.LoginActivity" android:screenOrientation="portrait"/>
         <activity android:name=".ui.activity.ForgotPassActivity" android:screenOrientation="portrait"/>
         <activity android:name=".ui.activity.HomeActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.BuildingListView" android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.BuildingDetailActivity" />
     </application>
 
 </manifest>
