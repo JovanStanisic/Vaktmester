@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/Blue">
     
@@ -65,5 +65,120 @@
         android:text="@string/building_active_filters"
         android:layout_marginLeft="27dp"
         android:layout_marginTop="10dp"/>
-    
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tickets_janitor"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:layout_margin="8dp"
+                android:background="@drawable/activity_tickets_round_textview"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tickets_janitor"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:layout_margin="8dp"
+                android:background="@drawable/activity_tickets_round_textview"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tickets_janitor"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:layout_margin="8dp"
+                android:background="@drawable/activity_tickets_round_textview"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tickets_janitor"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:layout_margin="8dp"
+                android:background="@drawable/activity_tickets_round_textview"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tickets_janitor"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:layout_margin="8dp"
+                android:background="@drawable/activity_tickets_round_textview"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tickets_janitor"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:layout_margin="8dp"
+                android:background="@drawable/activity_tickets_round_textview"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="28dp"
+            app:backgroundTint="@color/Blue"
+            app:fabCustomSize="50dp"
+            app:borderWidth="0dp"
+            app:elevation="12dp"/>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settings"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="28dp"
+            app:fabCustomSize="50dp"
+            app:borderWidth="0dp"
+            app:elevation="12dp"/>
+
+    </RelativeLayout>
+
+
+
 </LinearLayout>

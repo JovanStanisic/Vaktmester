@@ -20,11 +20,63 @@
             android:padding="15dp" />
     </LinearLayout>
 
-    <fragment android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.activity.BuildingMapActivity" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.activity.BuildingMapActivity"/>
+
+        <RelativeLayout android:id="@+id/mapRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Blue"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <TextView android:id="@+id/mapBuildingName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="@string/building_name_building_details"
+                android:layout_below="@+id/mapBuildingImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"/>
+
+            <TextView android:id="@+id/mapPhoneNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="@string/adress_building_details"
+                android:layout_below="@+id/mapBuildingName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"/>
+
+
+            <ImageView android:id="@+id/mapBuildingImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/bitmap"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
 
 </LinearLayout>
 

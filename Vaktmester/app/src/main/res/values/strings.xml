@@ -39,5 +39,11 @@
     <string name="building_tickets_name_phone">John Doe, +381 294 241 231</string>
     <string name="building_active_filters">Active filters:</string>
     <string name="building_tickets_horizontal_janitors">Janitors</string>
+    <string name="tickets_janitor">Janitor</string>
+    <string name="tickets_ticket_name">Ticket name</string>
+    <string name="text_view_prompt_created">Created:</string>
+    <string name="prompt_started">Started:</string>
+    <string name="prompt_status">Status:</string>
+    <string name="prompt_priority">Priority:</string>
 
 </resources>

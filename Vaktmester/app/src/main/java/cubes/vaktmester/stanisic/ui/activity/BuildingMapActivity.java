@@ -5,19 +5,29 @@ package cubes.vaktmester.stanisic.ui.activity;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.RelativeLayout;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import cubes.vaktmester.stanisic.R;
+import cubes.vaktmester.stanisic.animations.Animations;
 
 public class BuildingMapActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private RelativeLayout relativeLayout;
+    private boolean isCameraMoved;
+    private boolean isMarkerClicked;
+    private Marker marker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,9 +56,44 @@ public class BuildingMapActivity extends FragmentActivity implements OnMapReadyC
         // Add a marker in Sydney and move the camera
         // ovde proslediti informacije o zgradi
         LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney")).setIcon(BitmapDescriptorFactory.fromResource(R.drawable.building_pin));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
 
+
+        initComp();
+        addListener();
+
+    }
+
+    private void addListener() {
+
+        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                if(!isMarkerClicked) {
+                    relativeLayout.startAnimation(Animations.animationUp());
+                    isMarkerClicked = true;
+                    isCameraMoved = false;
+                }
+                return true;
+            }
+        });
+
+        mMap.setOnCameraMoveStartedListener(new GoogleMap.OnCameraMoveStartedListener() {
+            @Override
+            public void onCameraMoveStarted(int i) {
+                if(!isCameraMoved) {
+                    relativeLayout.startAnimation(Animations.animationDown());
+                    isCameraMoved = true;
+                    isMarkerClicked = false;
+                }
+
+            }
+        });
+    }
+
+    private void initComp() {
+        relativeLayout = findViewById(R.id.mapRelativeLayout);
     }
 }

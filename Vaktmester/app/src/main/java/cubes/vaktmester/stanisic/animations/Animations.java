@@ -48,4 +48,31 @@ public class Animations {
         return animation;
     }
 
+    public static TranslateAnimation animationUp(){
+
+        TranslateAnimation animation = new TranslateAnimation(
+                Animation.RELATIVE_TO_SELF, 0.0f,
+                Animation.RELATIVE_TO_SELF,0.0f,
+                Animation.RELATIVE_TO_SELF, 10.0f,
+                Animation.RELATIVE_TO_SELF, 0.0f);
+        animation.setDuration(500);
+        animation.setFillAfter(true);
+
+        return animation;
+    }
+
+    public static TranslateAnimation animationDown(){
+
+        TranslateAnimation animation = new TranslateAnimation(
+                Animation.RELATIVE_TO_SELF, 0.0f,
+                Animation.RELATIVE_TO_SELF,0.0f,
+                Animation.RELATIVE_TO_SELF, 0.0f,
+                Animation.RELATIVE_TO_SELF, 10.0f);
+        animation.setDuration(500);
+        animation.setFillAfter(true);
+
+        return animation;
+    }
+
+
 }

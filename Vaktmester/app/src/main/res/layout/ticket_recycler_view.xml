@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Blue">
+
+    <TextView android:id="@+id/ticketTaraba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#"
+        android:textSize="26sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView android:id="@+id/ticketNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textColor="@color/white"
+        android:text="1"
+        android:layout_toRightOf="@+id/ticketTaraba"
+        android:layout_alignBaseline="@+id/ticketTaraba"/>
+
+
+    <TextView android:id="@+id/ticketName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ticket name"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/ticketNumber"
+        android:layout_alignBaseline="@+id/ticketTaraba"
+        android:layout_marginLeft="4dp"/>
+
+    <TextView android:id="@+id/promptCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_view_prompt_created"
+        android:textColor="@color/blueGrayish"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_below="@id/ticketTaraba"
+        android:layout_alignStart="@+id/ticketTaraba"
+        android:layout_marginTop="4dp"/>
+
+    <TextView android:id="@+id/textViewCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blueGrayish"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/promptCreated"
+        android:layout_alignBaseline="@+id/promptCreated"
+        android:layout_marginLeft="4dp"/>
+
+
+    <TextView android:id="@+id/promptStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_status"
+        android:textColor="@color/blueGrayish"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_below="@+id/promptCreated"
+        android:layout_alignStart="@id/promptCreated"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blueGrayish"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/promptStatus"
+        android:layout_alignBaseline="@+id/promptStatus"
+        android:layout_marginLeft="4dp"/>
+
+    <TextView android:id="@+id/promptStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_started"
+        android:textColor="@color/blueGrayish"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_below="@+id/ticketName"
+        android:layout_toRightOf="@id/promptCreated"
+        android:layout_alignBaseline="@+id/promptCreated"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView android:id="@+id/textViewStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blueGrayish"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/promptStarted"
+        android:layout_alignBaseline="@+id/promptStarted"
+        android:layout_marginLeft="4dp"/>
+
+    <TextView android:id="@+id/promptPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_priority"
+        android:textColor="@color/blueGrayish"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_below="@+id/promptStarted"
+        android:layout_alignStart="@+id/promptStarted"/>
+
+    <TextView android:id="@+id/textViewPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blueGrayish"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/promptPriority"
+        android:layout_alignBaseline="@+id/promptPriority"
+        android:layout_marginLeft="4dp"/>
+
+</RelativeLayout>
