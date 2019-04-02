@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import cubes.vaktmester.stanisic.R;
 import cubes.vaktmester.stanisic.data.Building;
 import cubes.vaktmester.stanisic.ui.adapter.BuildingsAdapter;
 

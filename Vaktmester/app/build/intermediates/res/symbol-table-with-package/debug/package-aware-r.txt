@@ -644,7 +644,6 @@ drawable edit_text_gray_border
 drawable group
 drawable ic_arrow_back
 drawable ic_launcher_background
-drawable ic_launcher_foreground
 drawable ic_search
 drawable list
 drawable list_item_building
