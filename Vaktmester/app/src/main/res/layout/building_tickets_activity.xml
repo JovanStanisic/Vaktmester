@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Blue">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView android:id="@+id/imageViewBack"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="18dp"/>
+        
+        <ImageView android:id="@+id/imageViewBuilding"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bitmap"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/imageViewBack"/>
+
+        <TextView android:id="@+id/textViewBuildingName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/building_name_building_details"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/imageViewBuilding"/>
+
+        <TextView android:id="@+id/textViewBuildingNamePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/building_tickets_name_phone"
+            android:textColor="@color/white"
+            android:layout_below="@id/textViewBuildingName"
+            android:layout_toRightOf="@+id/imageViewBuilding"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="2dp"/>
+        
+        <ImageView android:id="@+id/imageViewCall"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/building_ticket_call"
+            android:layout_toRightOf="@+id/textViewBuildingNamePhone"
+            android:layout_marginLeft="10dp"
+            android:padding="15dp"/>
+        
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/blueGrayish"
+        android:text="@string/building_active_filters"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="10dp"/>
+    
+</LinearLayout>

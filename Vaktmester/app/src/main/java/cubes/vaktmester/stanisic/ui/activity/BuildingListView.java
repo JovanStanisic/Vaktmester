@@ -17,10 +17,8 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 import cubes.vaktmester.stanisic.R;
-<<<<<<< HEAD
-=======
+
 import cubes.vaktmester.stanisic.animations.Animations;
->>>>>>> 10ffdeb2bd0ed783ea097cb967be6c775275b2ef
 import cubes.vaktmester.stanisic.data.Building;
 import cubes.vaktmester.stanisic.data.DataContainer;
 import cubes.vaktmester.stanisic.ui.adapter.BuildingsAdapter;
@@ -32,7 +30,8 @@ public class BuildingListView extends AppCompatActivity {
         private ArrayList<Building> buildings;
         private BuildingsAdapter adapter;
         private Handler handler = new Handler();
-    @Override
+
+        @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.building_list_view);
@@ -73,7 +72,7 @@ public class BuildingListView extends AppCompatActivity {
                             }
 
                         }
-                    },325);
+                    },350);
                 }
             }
         });

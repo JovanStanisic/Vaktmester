@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.LayoutAnimationController;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.QuickContactBadge;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -20,6 +22,7 @@ public class BuildingDetailActivity extends Activity {
         private LinearLayout linearLayout1,linearLayout2, linearFooter;
         private TextView textViewContactName,textViewContactNum, textViewBuildingNameHeader,textViewBuildingNameDetail
                 , textViewTasksDetail, textViewNotes, textViewBuildingAdressDetail;
+        private FrameLayout viewMap;
 
         private int position;
     @Override
@@ -58,6 +61,21 @@ public class BuildingDetailActivity extends Activity {
                 finish();
             }
         });
+
+        viewMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), BuildingMapActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        rltvTickets.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(BuildingDetailActivity.this, BuildingTicketsActivity.class));
+            }
+        });
     }
 
     private void initComp() {
@@ -72,6 +90,8 @@ public class BuildingDetailActivity extends Activity {
         textViewTasksDetail = findViewById(R.id.textViewTasksDetail);
         textViewNotes = findViewById(R.id.textViewNotes);
         textViewBuildingAdressDetail = findViewById(R.id.textViewBuildingAdressDetail);
+
+        viewMap = findViewById(R.id.frameViewMap);
 
 
         //lejautovi za animacije
