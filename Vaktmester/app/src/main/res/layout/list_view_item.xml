@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Blue">
+    android:background="@color/Blue"
+    android:padding="8dp">
 
     <FrameLayout android:id="@+id/frameLayout"
         android:layout_width="wrap_content"
@@ -15,7 +16,7 @@
             android:layout_height="60dp"
             android:src="@drawable/bitmap"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="23dp"/>
+            android:layout_marginTop="15dp"/>
 
         <TextView android:id="@+id/textViewTasks"
             android:layout_width="60dp"
@@ -25,9 +26,7 @@
             android:textSize="12sp"
             android:background="@drawable/orange_text_view"
             android:gravity="center"
-
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="8dp"/>
+            android:layout_marginLeft="10dp"/>
     </FrameLayout>
     
 
@@ -41,7 +40,7 @@
         android:textStyle="bold"
         android:layout_toRightOf="@+id/frameLayout"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginTop="4dp"/>
 
     <TextView android:id="@+id/textViewBuildingAdress"
         android:layout_width="225dp"

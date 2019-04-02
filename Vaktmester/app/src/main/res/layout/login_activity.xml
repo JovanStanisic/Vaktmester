@@ -71,7 +71,8 @@
     android:background="@drawable/roundspinner"
     android:hint="@string/edit_text_username"
     android:textColorHint="@color/white"
-    android:layout_marginBottom="21dp" />
+    android:layout_marginBottom="21dp"
+    android:cursorVisible="false" />
 
     <EditText android:id="@+id/editTextPass"
         android:layout_width="match_parent"
@@ -84,7 +85,8 @@
         android:textColor="@color/white"
         android:background="@drawable/roundspinner"
         android:hint="@string/edit_text_password"
-        android:textColorHint="@color/white"/>
+        android:textColorHint="@color/white"
+        android:cursorVisible="false"/>
 
     <TextView android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"

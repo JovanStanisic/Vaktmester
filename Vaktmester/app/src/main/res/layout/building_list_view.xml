@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/Blue"
     android:orientation="vertical">
 
@@ -39,7 +39,10 @@
             android:background="@drawable/edit_text_gray_border"
             android:hint="@string/buildings_search_edit_text"
             android:textColorHint="@color/BorderGray"
-            android:padding="13dp"/>
+            android:padding="13dp"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/blueGrayish"
+            android:cursorVisible="false"/>
 
         <ImageView android:id="@+id/imageViewSearch"
             android:layout_width="30dp"
@@ -53,7 +56,10 @@
 
     <ListView android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:divider="@color/blueGrayish"
+        android:dividerHeight="1sp"></ListView>
 
 
 

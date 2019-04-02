@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Blue">
+
+    <LinearLayout android:id="@+id/linearHeader"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageView android:id="@+id/imageViewBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_arrow_back"
+            android:paddingTop="16dp"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="2dp"/>
+
+        <TextView android:id="@+id/textViewHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buildings_text_view"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <ScrollView android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearHeader"
+        android:layout_above="@+id/linearFooter">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+
+            <LinearLayout android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="@color/blueGrayish"
+                android:showDividers="end">
+
+                <FrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center|left"
+                        android:src="@drawable/map_pin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:text="@string/building_details_view_map"
+                        android:textColor="@color/blueGrayish"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="2dp"/>
+
+                </FrameLayout>
+
+                <ImageView android:id="@+id/imageViewBuildingDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/concept_house_building_details"/>
+
+                <TextView android:id="@+id/textViewTasksDetail"
+                    android:layout_width="61dp"
+                    android:layout_height="19dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:text="@string/tasks_building_details"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/orange_text_view"
+                    android:gravity="center"/>
+
+                <TextView android:id="@+id/textViewBuildingNameDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/building_name_building_details"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/white"/>
+
+                <TextView android:id="@+id/textViewBuildingAdressDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/adress_building_details"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="15dp"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/blueGrayish"/>
+
+            <LinearLayout android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <TextView android:id="@+id/textViewNotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:text="@string/building_description_building_details"
+                    android:lineSpacingMultiplier="1.36"/>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/blueGrayish"
+                        android:textStyle="bold"
+                        android:text="@string/read_more_building_details"
+                        android:layout_gravity="center|left"
+                        android:layout_marginRight="16dp"/>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center|right"
+                        android:src="@drawable/arrow_down"
+                        android:layout_marginTop="1dp"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/blueGrayish"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="26dp">
+
+                <TextView android:id="@+id/textViewContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_person_building_details"
+                    android:textColor="@color/blueGrayish"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="26dp"/>
+
+                <ImageView android:id="@+id/imageViewContact"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/orange_circle"
+                    android:layout_below="@+id/textViewContact"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginLeft="19dp"/>
+
+                <TextView android:id="@+id/textViewContactName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="@string/contact_name_building_details"
+                    android:layout_below="@+id/textViewContact"
+                    android:layout_toRightOf="@id/imageViewContact"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="16dp"/>
+
+                <TextView android:id="@+id/textViewContactNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:text="@string/contact_num_building_details"
+                    android:layout_below="@id/textViewContactName"
+                    android:layout_toRightOf="@+id/imageViewContact"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout android:id="@+id/linearFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:weightSum="3"
+        android:layout_alignParentBottom="true">
+
+
+        <RelativeLayout android:id="@+id/rltvTickets"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/blueGrayish"/>
+
+            <ImageView android:id="@+id/imageViewTickets"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ticket_roun_corners"
+                android:layout_centerInParent="true"
+                android:src="@drawable/check_list"/>
+
+            <TextView android:id="@+id/textViewTickets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blueGrayish"
+                android:text="@string/building_details_tickets"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/imageViewTickets"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/rltvSupplier"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/blueGrayish"/>
+
+            <ImageView android:id="@+id/imageViewSupplier"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/supplier"/>
+
+            <TextView android:id="@+id/textViewSupplier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blueGrayish"
+                android:text="@string/building_detail_supplier"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/imageViewSupplier"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/rltvDocuments"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/blueGrayish"/>
+
+            <ImageView android:id="@+id/imageViewDocuments"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/documents"/>
+
+            <TextView android:id="@+id/textViewDocuments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blueGrayish"
+                android:text="@string/building_detail_documents"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/imageViewDocuments"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

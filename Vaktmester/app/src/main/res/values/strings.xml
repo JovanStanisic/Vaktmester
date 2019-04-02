@@ -23,5 +23,17 @@
     <string name="list_item_building_name">Building name</string>
     <string name="list_item_tasks">2 tasks</string>
     <string name="list_item_adress">Bul. Mihajla Pupina 183,Novi Beograd</string>
+    <string name="building_details_tickets">Tickets</string>
+    <string name="building_detail_supplier">Supplier</string>
+    <string name="building_detail_documents">Documents</string>
+    <string name="building_details_view_map">View on map</string>
+    <string name="tasks_building_details">2 tasks</string>
+    <string name="building_name_building_details">Building name</string>
+    <string name="adress_building_details">Bul. Mihajla Pupina 183, Novi Beograd</string>
+    <string name="building_description_building_details">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using It is a long established fact that a reader will be distracted by the readable content established fact that a reader…</string>
+    <string name="read_more_building_details">Read more</string>
+    <string name="contact_person_building_details">Contact person</string>
+    <string name="contact_name_building_details">John Doe</string>
+    <string name="contact_num_building_details">+ 381 011 9425 925</string>
 
 </resources>

@@ -34,6 +34,20 @@ public class LoginActivity extends AppCompatActivity {
 
     private void addListener() {
 
+        editTextUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editTextUser.setCursorVisible(true);
+            }
+        });
+
+        editTextPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editTextPass.setCursorVisible(true);
+            }
+        });
+
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
