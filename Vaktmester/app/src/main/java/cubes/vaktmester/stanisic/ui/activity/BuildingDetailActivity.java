@@ -4,16 +4,20 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.LayoutAnimationController;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import cubes.vaktmester.stanisic.R;
+import cubes.vaktmester.stanisic.animations.Animations;
 import cubes.vaktmester.stanisic.data.DataContainer;
 
 public class BuildingDetailActivity extends Activity {
         private ImageView imageViewBack;
         private RelativeLayout rltvTickets, rltvSupp, rltvDoc;
+        private LinearLayout linearLayout1,linearLayout2, linearFooter;
         private TextView textViewContactName,textViewContactNum, textViewBuildingNameHeader,textViewBuildingNameDetail
                 , textViewTasksDetail, textViewNotes, textViewBuildingAdressDetail;
 
@@ -26,6 +30,12 @@ public class BuildingDetailActivity extends Activity {
         initComp();
         addListener();
         fillData();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        setAnimations();
     }
 
     private void fillData() {
@@ -62,6 +72,22 @@ public class BuildingDetailActivity extends Activity {
         textViewTasksDetail = findViewById(R.id.textViewTasksDetail);
         textViewNotes = findViewById(R.id.textViewNotes);
         textViewBuildingAdressDetail = findViewById(R.id.textViewBuildingAdressDetail);
+
+
+        //lejautovi za animacije
+        linearLayout1 = findViewById(R.id.linearLayout1);
+        linearFooter = findViewById(R.id.linearFooter);
+        linearLayout2 = findViewById(R.id.linearLayout2);
+    }
+
+    private void setAnimations(){
+        //animacije za lejautove
+
+        LayoutAnimationController controller = new LayoutAnimationController(Animations.animationLeft(), 0.2f);
+
+        linearLayout1.setLayoutAnimation(controller);
+        linearFooter.setLayoutAnimation(controller);
+        linearLayout2.setLayoutAnimation(controller);
     }
 
 }

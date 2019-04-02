@@ -789,6 +789,8 @@ id line1
 id line3
 id linearFooter
 id linearHeader
+id linearLayout1
+id linearLayout2
 id listItemImageView
 id listMode
 id listView

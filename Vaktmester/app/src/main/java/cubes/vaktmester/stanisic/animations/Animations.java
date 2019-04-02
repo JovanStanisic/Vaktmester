@@ -29,7 +29,7 @@ public class Animations {
                 Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF, 10.0f,
                 Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF, 0.0f
         );
-        animation.setDuration(600);
+        animation.setDuration(500);
         animation.setFillAfter(true);
 
         return animation;
@@ -39,10 +39,10 @@ public class Animations {
     public static TranslateAnimation animationLeft() {
 
         TranslateAnimation animation = new TranslateAnimation(
-                Animation.RELATIVE_TO_SELF, 20.0f, Animation.RELATIVE_TO_SELF, 0.0f,
+                Animation.RELATIVE_TO_SELF, 10.0f, Animation.RELATIVE_TO_SELF, 0.0f,
                 Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF, 0.0f
         );
-        animation.setDuration(600);
+        animation.setDuration(500);
         animation.setFillAfter(true);
 
         return animation;

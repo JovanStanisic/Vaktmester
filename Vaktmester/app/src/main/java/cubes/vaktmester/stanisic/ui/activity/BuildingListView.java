@@ -29,8 +29,6 @@ public class BuildingListView extends AppCompatActivity {
         private ArrayList<Building> buildings;
         private BuildingsAdapter adapter;
         private Handler handler = new Handler();
-        public TranslateAnimation animationRight = Animations.animationRight();
-        public TranslateAnimation animationLeft = Animations.animationLeft();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,7 +51,7 @@ public class BuildingListView extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
 
-                LayoutAnimationController controller = new LayoutAnimationController(animationRight, 0.2f);
+                LayoutAnimationController controller = new LayoutAnimationController(Animations.animationRight(), 0.1f);
                 listView.setLayoutAnimation(controller);
 
                 if(controller.isDone()){
@@ -72,7 +70,7 @@ public class BuildingListView extends AppCompatActivity {
                             }
 
                         }
-                    },700);
+                    },325);
                 }
             }
         });
