@@ -1302,12 +1302,9 @@ id pin
 id profile
 id progress_circular
 id progress_horizontal
-id promptCreated
-id promptPriority
-id promptStarted
-id promptStatus
 id radio
 id recyclerView
+id recyclerViewFilters
 id relativeLayoutBuildings
 id relativeLayoutChat
 id relativeLayoutSheet
@@ -1406,8 +1403,6 @@ id textinput_counter
 id textinput_error
 id textinput_helper_text
 id ticketName
-id ticketNumber
-id ticketTaraba
 id time
 id title
 id titleDividerNoCustom
@@ -1498,6 +1493,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout filter_rv_item
 layout forgot_pass_layout
 layout fragment_intro
 layout home_activity_layout

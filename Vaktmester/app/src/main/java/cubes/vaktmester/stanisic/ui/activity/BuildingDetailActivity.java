@@ -8,13 +8,13 @@ import android.view.animation.LayoutAnimationController;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.QuickContactBadge;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import cubes.vaktmester.stanisic.R;
 import cubes.vaktmester.stanisic.animations.Animations;
 import cubes.vaktmester.stanisic.data.DataContainer;
+import cubes.vaktmester.stanisic.ui.activity.tickets.TicketsRecyclerView;
 
 public class BuildingDetailActivity extends Activity {
         private ImageView imageViewBack;
@@ -73,7 +73,7 @@ public class BuildingDetailActivity extends Activity {
         rltvTickets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(BuildingDetailActivity.this, BuildingTicketsActivity.class));
+                startActivity(new Intent(BuildingDetailActivity.this, TicketsRecyclerView.class));
             }
         });
     }

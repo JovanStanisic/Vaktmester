@@ -35,7 +35,7 @@ public class Animations {
         return animation;
     }
 
-    //vraca list iteme s leva u desno na ekran
+    //vraca list iteme s desna u levo na ekran
     public static TranslateAnimation animationLeft() {
 
         TranslateAnimation animation = new TranslateAnimation(

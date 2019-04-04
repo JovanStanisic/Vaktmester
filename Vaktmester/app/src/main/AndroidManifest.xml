@@ -59,7 +59,7 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".ui.activity.BuildingDetailActivity" />
-        <activity android:name=".ui.activity.BuildingTicketsActivity" />
+        <activity android:name=".ui.activity.tickets.TicketsRecyclerView" />
     </application>
 
 </manifest>
