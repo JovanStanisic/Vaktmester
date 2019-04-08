@@ -11,10 +11,11 @@
         android:layout_height="wrap_content">
         
         <ImageView android:id="@+id/imageViewBack"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/ic_arrow_back"
-            android:padding="18dp"/>
+            android:padding="15dp"
+            android:layout_marginTop="4dp"/>
         
         <ImageView android:id="@+id/imageViewBuilding"
             android:layout_width="50dp"
@@ -57,20 +58,22 @@
         
     </RelativeLayout>
 
-    <TextView
+    <TextView android:id="@+id/activeFilters"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="14sp"
         android:textColor="@color/blueGrayish"
         android:text="@string/building_active_filters"
         android:layout_marginLeft="27dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerViewFilters"
         android:layout_width="match_parent"
-        android:layout_height="70dp">
-
+        android:layout_height="50dp"
+        android:visibility="gone">
 
     </android.support.v7.widget.RecyclerView>
 

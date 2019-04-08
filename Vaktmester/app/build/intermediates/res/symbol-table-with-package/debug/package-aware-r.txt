@@ -1081,6 +1081,7 @@ drawable documents
 drawable drawable_english
 drawable drawable_norway
 drawable edit_text_gray_border
+drawable filter_ticket_round
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable group
@@ -1150,6 +1151,7 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_text
 id actions
+id activeFilters
 id activity_chooser_view_content
 id add
 id adjust_height

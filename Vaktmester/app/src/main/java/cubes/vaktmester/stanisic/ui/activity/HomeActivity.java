@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import cubes.vaktmester.stanisic.BuildConfig;
 import cubes.vaktmester.stanisic.R;
-import cubes.vaktmester.stanisic.animations.Animations;
+import cubes.vaktmester.stanisic.utils.animations.Animations;
 
 public class HomeActivity extends AppCompatActivity {
         private TextView textViewVersion;

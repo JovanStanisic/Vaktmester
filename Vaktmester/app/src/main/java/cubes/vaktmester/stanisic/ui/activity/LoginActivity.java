@@ -1,6 +1,5 @@
 package cubes.vaktmester.stanisic.ui.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -12,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import cubes.vaktmester.stanisic.R;
-import cubes.vaktmester.stanisic.animations.DepthTransformation;
+import cubes.vaktmester.stanisic.utils.animations.DepthTransformation;
 import cubes.vaktmester.stanisic.ui.adapter.IntroPagerAdapter;
 
 public class LoginActivity extends AppCompatActivity {

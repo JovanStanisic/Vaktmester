@@ -1,16 +1,27 @@
 package cubes.vaktmester.stanisic.ui.adapter.rv;
 
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
+import android.text.method.LinkMovementMethod;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.StyleSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 import cubes.vaktmester.stanisic.R;
 import cubes.vaktmester.stanisic.data.Ticket;
+import cubes.vaktmester.stanisic.utils.SpannableUtil;
 
 public class RecyclerViewAdapterTickets extends RecyclerView.Adapter<RecyclerViewAdapterTickets.TicketViewHolder> {
 
@@ -47,11 +58,16 @@ public class RecyclerViewAdapterTickets extends RecyclerView.Adapter<RecyclerVie
     public void onBindViewHolder(@NonNull TicketViewHolder ticketViewHolder, int i) {
         Ticket ticket = tickets.get(i);
 
-        ticketViewHolder.ticketName.setText(new StringBuilder().append("#").append(ticket.id).append(" - ").append(ticket.ticketName).toString());
-        ticketViewHolder.ticketCreated.setText(ticket.ticketCreated);
-        ticketViewHolder.ticketStatus.setText(ticket.ticketStatus);
-        ticketViewHolder.ticketStarted.setText(ticket.ticketStarted);
-        ticketViewHolder.ticketPriority.setText(ticket.ticketPriority);
+        ticketViewHolder.ticketName.setText(new StringBuilder().append("#").append(ticket.id).append(" - ").append(ticket.ticketName).toString());;
+
+        ticketViewHolder.ticketCreated.setText(SpannableUtil.spannable("Created: ",ticket.ticketCreated),TextView.BufferType.SPANNABLE);
+
+        ticketViewHolder.ticketStatus.setText(SpannableUtil.spannable("Status: ",ticket.ticketCreated),TextView.BufferType.SPANNABLE);
+
+        ticketViewHolder.ticketStarted.setText(SpannableUtil.spannable("Started: ",ticket.ticketCreated),TextView.BufferType.SPANNABLE);
+
+        ticketViewHolder.ticketPriority.setText(SpannableUtil.spannable("Priority: ",ticket.ticketCreated),TextView.BufferType.SPANNABLE);
+
 
     }
 

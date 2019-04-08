@@ -4,22 +4,21 @@ package cubes.vaktmester.stanisic.ui.activity;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import cubes.vaktmester.stanisic.R;
-import cubes.vaktmester.stanisic.animations.Animations;
+import cubes.vaktmester.stanisic.utils.animations.Animations;
 
 public class BuildingMapActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -28,6 +27,7 @@ public class BuildingMapActivity extends FragmentActivity implements OnMapReadyC
     private boolean isCameraMoved;
     private boolean isMarkerClicked;
     private Marker marker;
+    private ImageView imageViewBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,9 +91,17 @@ public class BuildingMapActivity extends FragmentActivity implements OnMapReadyC
 
             }
         });
+
+        imageViewBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     private void initComp() {
+        imageViewBack = findViewById(R.id.imageViewBack);
         relativeLayout = findViewById(R.id.mapRelativeLayout);
     }
 }

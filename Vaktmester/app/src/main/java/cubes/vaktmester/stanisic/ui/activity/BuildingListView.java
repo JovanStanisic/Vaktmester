@@ -5,9 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.animation.Animation;
 import android.view.animation.LayoutAnimationController;
-import android.view.animation.TranslateAnimation;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -18,7 +16,7 @@ import java.util.ArrayList;
 
 import cubes.vaktmester.stanisic.R;
 
-import cubes.vaktmester.stanisic.animations.Animations;
+import cubes.vaktmester.stanisic.utils.animations.Animations;
 import cubes.vaktmester.stanisic.data.Building;
 import cubes.vaktmester.stanisic.data.DataContainer;
 import cubes.vaktmester.stanisic.ui.adapter.BuildingsAdapter;

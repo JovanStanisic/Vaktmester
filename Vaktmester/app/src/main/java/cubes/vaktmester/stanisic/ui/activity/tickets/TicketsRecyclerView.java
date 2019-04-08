@@ -7,11 +7,13 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
 import cubes.vaktmester.stanisic.R;
-import cubes.vaktmester.stanisic.animations.Animations;
 import cubes.vaktmester.stanisic.data.DataContainer;
 import cubes.vaktmester.stanisic.data.Ticket;
 import cubes.vaktmester.stanisic.ui.adapter.rv.RecyclerViewAdapterFilters;
@@ -23,6 +25,9 @@ public class TicketsRecyclerView extends AppCompatActivity {
         private RecyclerView.LayoutManager layoutManagerTickets, layoutManagerFilters;
         private FloatingActionButton floatSettings, floatAdd;
         private ArrayList<String> filters;
+        private ImageView imageViewBack;
+        private TextView activeFilters;
+        private boolean isDragged;
         @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,30 +35,12 @@ public class TicketsRecyclerView extends AppCompatActivity {
 
         loadData();
         initComp();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        recyclerViewTickets.addOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
-                super.onScrolled(recyclerView, dx, dy);
-
-                if(dy > 0){
-                    floatSettings.startAnimation(Animations.animationDown());
-                    floatAdd.startAnimation(Animations.animationDown());
-                }
-                else {
-                    floatSettings.startAnimation(Animations.animationUp());
-                    floatAdd.startAnimation(Animations.animationUp());
-                }
-            }
-        });
+        addListener();
     }
 
     private void initComp() {
+
+            imageViewBack = findViewById(R.id.imageViewBack);
         //inicijalizujem rv za tickets
         layoutManagerTickets = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
         ticketAdapter = new RecyclerViewAdapterTickets(DataContainer.tickets);
@@ -65,6 +52,7 @@ public class TicketsRecyclerView extends AppCompatActivity {
 
         floatAdd = findViewById(R.id.floatingAdd);
         floatSettings = findViewById(R.id.floatingSettings);
+        activeFilters = findViewById(R.id.activeFilters);
 
         //inicijalizujem rv za filters
         layoutManagerFilters = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
@@ -97,23 +85,46 @@ public class TicketsRecyclerView extends AppCompatActivity {
         filters.add("Priority");
 
     }
+    private void addListener(){
+        imageViewBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        floatSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activeFilters.setVisibility(View.VISIBLE);
+                recyclerViewFilters.setVisibility(View.VISIBLE);
+            }
+        });
+
+        recyclerViewTickets.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
+                super.onScrollStateChanged(recyclerView, newState);
+
+            }
+
+            @Override
+            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+
+                if (dy<0 && !floatAdd.isShown() && !floatSettings.isShown()) {
+                    floatAdd.show();
+                    floatSettings.show();
+                }
+                else if (dy > 0 && floatAdd.isShown() && floatSettings.isShown()){
+                    floatAdd.hide();
+                    floatSettings.hide();
+                }
+                }
+        });
+
+    }
 }
 
-//recyclerViewTickets.addOnScrollListener(new RecyclerView.OnScrollListener() {
-//@Override
-//public void onScrollStateChanged(@NonNull RecyclerView recyclerViewTickets, int newState) {
-//        super.onScrollStateChanged(recyclerViewTickets, newState);
-//
-//
-//        if(newState == recyclerViewTickets.SCROLL_STATE_IDLE){
-//        floatSettings.startAnimation(Animations.animationUp());
-//        floatAdd.startAnimation(Animations.animationUp());
-//        }
-//        else if(newState == recyclerViewTickets.SCROLL_STATE_DRAGGING){
-//        floatSettings.startAnimation(Animations.animationDown());
-//        floatAdd.startAnimation(Animations.animationDown());
-//        }
-//
-//        }
-//
-//        });
+
+
+

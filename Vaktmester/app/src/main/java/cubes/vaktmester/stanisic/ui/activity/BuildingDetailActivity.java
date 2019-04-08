@@ -12,7 +12,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import cubes.vaktmester.stanisic.R;
-import cubes.vaktmester.stanisic.animations.Animations;
+import cubes.vaktmester.stanisic.utils.animations.Animations;
 import cubes.vaktmester.stanisic.data.DataContainer;
 import cubes.vaktmester.stanisic.ui.activity.tickets.TicketsRecyclerView;
 
