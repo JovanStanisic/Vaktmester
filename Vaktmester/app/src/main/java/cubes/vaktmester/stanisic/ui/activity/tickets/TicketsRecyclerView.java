@@ -1,5 +1,6 @@
 package cubes.vaktmester.stanisic.ui.activity.tickets;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -95,8 +96,7 @@ public class TicketsRecyclerView extends AppCompatActivity {
         floatSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                activeFilters.setVisibility(View.VISIBLE);
-                recyclerViewFilters.setVisibility(View.VISIBLE);
+                startActivity(new Intent(TicketsRecyclerView.this, FiltersActivity.class));
             }
         });
 

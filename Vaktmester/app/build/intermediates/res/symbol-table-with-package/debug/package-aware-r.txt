@@ -1082,6 +1082,7 @@ drawable drawable_english
 drawable drawable_norway
 drawable edit_text_gray_border
 drawable filter_ticket_round
+drawable filters_arrow
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable group
@@ -1175,6 +1176,7 @@ id center_vertical
 id chains
 id changeLang
 id changePass
+id checkBox
 id checkbox
 id chronometer
 id clip_horizontal
@@ -1211,6 +1213,7 @@ id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
+id expandableListView
 id expanded_menu
 id fill
 id fill_horizontal
@@ -1268,7 +1271,9 @@ id linearFooter
 id linearHeader
 id linearLayout1
 id linearLayout2
+id listGroupTextView
 id listItemImageView
+id listItemTextView
 id listMode
 id listView
 id list_item
@@ -1477,6 +1482,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_building_map
+layout activity_filters
 layout activity_loading
 layout building_detail_layout
 layout building_list_view
@@ -1496,6 +1502,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout filter_rv_item
+layout filters_list_group
+layout filters_list_item
 layout forgot_pass_layout
 layout fragment_intro
 layout home_activity_layout
@@ -1611,6 +1619,12 @@ string edit_text_password
 string edit_text_username
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string filter_adapter_category
+string filter_adapter_priority
+string filter_adapter_status
+string filters_normal
+string filters_status
+string filters_tickets
 string forgot_pass_confirm
 string forgot_your_password
 string google_maps_key
