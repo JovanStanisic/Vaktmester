@@ -1,6 +1,9 @@
 package cubes.vaktmester.stanisic.ui.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.provider.ContactsContract;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +13,7 @@ import android.widget.TextView;
 
 import cubes.vaktmester.stanisic.R;
 import cubes.vaktmester.stanisic.data.DataContainer;
+import cubes.vaktmester.stanisic.data.SettingsItem;
 
 public class FiltersExpandableListAdapter extends BaseExpandableListAdapter {
 
@@ -31,7 +35,6 @@ public class FiltersExpandableListAdapter extends BaseExpandableListAdapter {
                 if(DataContainer.status == null){
                     return 0;
                 }
-
                 return DataContainer.status.size();
 
             case 1:
@@ -55,7 +58,16 @@ public class FiltersExpandableListAdapter extends BaseExpandableListAdapter {
     }
 
     @Override
-    public Object getChild(int groupPosition, int childPosition) {
+    public Object getChild(int groupPosition, int childPosition)
+    {
+        switch (groupPosition){
+            case 0:
+                return DataContainer.status.get(childPosition);
+            case 1:
+                return DataContainer.priority.get(childPosition);
+            case 2:
+                return DataContainer.category.get(childPosition);
+        }
         return null;
     }
 
@@ -81,31 +93,60 @@ public class FiltersExpandableListAdapter extends BaseExpandableListAdapter {
         if(row == null){
             LayoutInflater inflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             row = inflater.inflate(R.layout.filters_list_group,parent,false);
-
             holder.textView = row.findViewById(R.id.listGroupTextView);
             row.setTag(holder);
         }
         else{
-            holder = (Holder)row.getTag();
+            holder = (Holder) row.getTag();
         }
+
+
+
         switch (groupPosition){
             case 0:
+                for(int i = 0; i < DataContainer.status.size(); i++ ){
+                    if(DataContainer.status.get(i).isSelected){
+                        holder.textView.setTextColor(Color.WHITE);
+                        break;
+                    }
+                    else {
+                        holder.textView.setTextColor(context.getResources().getColor(R.color.blueGrayish));
+                    }
+                }
                 holder.textView.setText(context.getString(R.string.filter_adapter_status));
                 break;
             case 1:
+                for(int i = 0; i < DataContainer.priority.size(); i++ ){
+                    if(DataContainer.priority.get(i).isSelected){
+                        holder.textView.setTextColor(Color.WHITE);
+                        break;
+                    }
+                    else {
+                        holder.textView.setTextColor(context.getResources().getColor(R.color.blueGrayish));
+                    }
+                }
+
                 holder.textView.setText(context.getString(R.string.filter_adapter_priority));
                 break;
             case 2:
+                for(int i = 0; i < DataContainer.category.size(); i++ ){
+                    if(DataContainer.category.get(i).isSelected){
+                        holder.textView.setTextColor(Color.WHITE);
+                        break;
+                    }
+                    else {
+                        holder.textView.setTextColor(context.getResources().getColor(R.color.blueGrayish));
+                    }
+                }
                 holder.textView.setText(context.getString(R.string.filter_adapter_category));
                 break;
         }
-
 
         return row;
     }
 
     @Override
-    public View getChildView(final int groupPosition, final int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
+    public View getChildView(final int groupPosition, final int childPosition, final boolean isLastChild, View convertView, ViewGroup parent) {
         View row = convertView;
         Holder holder = new Holder();
         if(row == null){
@@ -165,6 +206,5 @@ public class FiltersExpandableListAdapter extends BaseExpandableListAdapter {
         public CheckBox childCheckBox;
     }
 
+    }
 
-
-}

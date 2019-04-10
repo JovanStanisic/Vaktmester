@@ -36,8 +36,6 @@ public class FiltersActivity extends AppCompatActivity {
                 finish();
             }
         });
-
-
     }
 
     private void initComp() {
