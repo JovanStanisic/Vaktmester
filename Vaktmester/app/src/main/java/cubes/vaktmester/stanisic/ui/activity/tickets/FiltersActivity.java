@@ -1,7 +1,10 @@
 package cubes.vaktmester.stanisic.ui.activity.tickets;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ExpandableListView;
@@ -17,6 +20,9 @@ import cubes.vaktmester.stanisic.ui.adapter.FiltersExpandableListAdapter;
 public class FiltersActivity extends AppCompatActivity {
         private ExpandableListView expListView;
         private ImageView imageViewBack;
+        private FiltersExpandableListAdapter adapter;
+        private FloatingActionButton fabSave;
+        private int result;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +31,8 @@ public class FiltersActivity extends AppCompatActivity {
         initComp();
         loadData();
         addListener();
-        expListView.setAdapter(new FiltersExpandableListAdapter(getApplicationContext()));
+        adapter = new FiltersExpandableListAdapter(getApplicationContext());
+        expListView.setAdapter(adapter);
 
     }
 
@@ -33,6 +40,17 @@ public class FiltersActivity extends AppCompatActivity {
         imageViewBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Intent returnIntent = new Intent();
+                setResult(Activity.RESULT_CANCELED,returnIntent);
+                finish();
+            }
+        });
+        fabSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent returnIntent = new Intent();
+                setResult(Activity.RESULT_OK,returnIntent);
                 finish();
             }
         });
@@ -41,6 +59,7 @@ public class FiltersActivity extends AppCompatActivity {
     private void initComp() {
         expListView = findViewById(R.id.expandableListView);
         imageViewBack = findViewById(R.id.imageViewBack);
+        fabSave = findViewById(R.id.fabSave);
     }
 
     private void loadData() {
@@ -64,4 +83,7 @@ public class FiltersActivity extends AppCompatActivity {
         DataContainer.category.add(new SettingsItem("11", "Category 3",false));
 
     }
-}
+
+
+    }
+

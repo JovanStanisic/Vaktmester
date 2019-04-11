@@ -1,6 +1,8 @@
 package cubes.vaktmester.stanisic.ui.activity.tickets;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -8,14 +10,17 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 import cubes.vaktmester.stanisic.R;
 import cubes.vaktmester.stanisic.data.DataContainer;
+import cubes.vaktmester.stanisic.data.SettingsItem;
 import cubes.vaktmester.stanisic.data.Ticket;
 import cubes.vaktmester.stanisic.ui.adapter.rv.RecyclerViewAdapterFilters;
 import cubes.vaktmester.stanisic.ui.adapter.rv.RecyclerViewAdapterTickets;
@@ -29,6 +34,7 @@ public class TicketsRecyclerView extends AppCompatActivity {
         private ImageView imageViewBack;
         private TextView activeFilters;
         private boolean isDragged;
+        private int result;
         @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +43,7 @@ public class TicketsRecyclerView extends AppCompatActivity {
         loadData();
         initComp();
         addListener();
-    }
+        }
 
     private void initComp() {
 
@@ -57,7 +63,7 @@ public class TicketsRecyclerView extends AppCompatActivity {
 
         //inicijalizujem rv za filters
         layoutManagerFilters = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
-        filterAdapter = new RecyclerViewAdapterFilters(filters);
+        filterAdapter = new RecyclerViewAdapterFilters(filters,getApplicationContext());
 
         recyclerViewFilters = findViewById(R.id.recyclerViewFilters);
         recyclerViewFilters.setHasFixedSize(true);
@@ -80,10 +86,9 @@ public class TicketsRecyclerView extends AppCompatActivity {
         DataContainer.tickets.add(new Ticket());
 
         filters = new ArrayList<>();
-        filters.add("Janitor");
         filters.add("Status");
-        filters.add("Category");
         filters.add("Priority");
+        filters.add("Category");
 
     }
     private void addListener(){
@@ -96,7 +101,8 @@ public class TicketsRecyclerView extends AppCompatActivity {
         floatSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(TicketsRecyclerView.this, FiltersActivity.class));
+                Intent intent = new Intent(TicketsRecyclerView.this, FiltersActivity.class);
+                startActivityForResult(intent,0);
             }
         });
 
@@ -123,6 +129,20 @@ public class TicketsRecyclerView extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == 0){
+            if(resultCode == Activity.RESULT_OK) {
+                Toast.makeText(this,"on activity result",Toast.LENGTH_LONG).show();
+                activeFilters.setVisibility(View.VISIBLE);
+                recyclerViewFilters.setVisibility(View.VISIBLE);
+            }
+        }
+    }
+
+
 }
 
 

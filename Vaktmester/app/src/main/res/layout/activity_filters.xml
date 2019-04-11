@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/Blue"
     android:orientation="vertical">
 
-    <LinearLayout
+    <LinearLayout android:id="@+id/linearHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -34,8 +34,21 @@
         android:layout_height="match_parent"
         android:divider="@color/BorderGray"
         android:dividerHeight="1dp"
-       android:groupIndicator="@null">
+       android:groupIndicator="@null"
+        android:layout_below="@id/linearHeader">
 
     </ExpandableListView>
 
-</LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSave"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:fabCustomSize="50dp"
+        app:backgroundTint="@color/Orange"
+        android:src="@drawable/ic_save"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="28dp"
+        app:maxImageSize="30dp"/>
+
+</RelativeLayout>

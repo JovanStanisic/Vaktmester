@@ -12,4 +12,37 @@ public class DataContainer {
     public static ArrayList<SettingsItem> category;
 
 
+    public static boolean isChecked(int j){
+
+        if(j == 0){
+            for (int i = 0; i<DataContainer.status.size(); i++){
+                SettingsItem pom = DataContainer.status.get(i);
+
+                if(pom.isSelected){
+                    return true;
+                }
+            }
+        }
+
+        if(j == 1){
+            for (int i = 0; i<DataContainer.priority.size(); i++){
+                SettingsItem pom = DataContainer.priority.get(i);
+
+                if(pom.isSelected){
+                    return true;
+                }
+            }
+        }
+
+        if(j == 2){
+            for (int i = 0; i<DataContainer.category.size(); i++){
+                SettingsItem pom = DataContainer.category.get(i);
+
+                if(pom.isSelected){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

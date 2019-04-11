@@ -1091,6 +1091,7 @@ drawable ic_launcher_background
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_save
 drawable ic_search
 drawable list
 drawable list_item_building
@@ -1113,6 +1114,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable noun_1642355_cc
 drawable orange_circle
+drawable orange_save
 drawable orange_text_view
 drawable oval_empty
 drawable oval_full
@@ -1215,6 +1217,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expandableListView
 id expanded_menu
+id fabSave
 id fill
 id fill_horizontal
 id fill_vertical

@@ -60,14 +60,7 @@ public class FiltersExpandableListAdapter extends BaseExpandableListAdapter {
     @Override
     public Object getChild(int groupPosition, int childPosition)
     {
-        switch (groupPosition){
-            case 0:
-                return DataContainer.status.get(childPosition);
-            case 1:
-                return DataContainer.priority.get(childPosition);
-            case 2:
-                return DataContainer.category.get(childPosition);
-        }
+
         return null;
     }
 
