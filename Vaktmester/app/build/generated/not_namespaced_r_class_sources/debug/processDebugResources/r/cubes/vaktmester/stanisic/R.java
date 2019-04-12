@@ -5364,10 +5364,11 @@ public final class R {
     public static final int search=0x7f0700ad;
     public static final int settings=0x7f0700ae;
     public static final int supplier=0x7f0700af;
-    public static final int ticket_round_corners=0x7f0700b0;
-    public static final int tooltip_frame_dark=0x7f0700b1;
-    public static final int tooltip_frame_light=0x7f0700b2;
-    public static final int welcome_page=0x7f0700b3;
+    public static final int ticket_filter_round_checked=0x7f0700b0;
+    public static final int ticket_round_corners=0x7f0700b1;
+    public static final int tooltip_frame_dark=0x7f0700b2;
+    public static final int tooltip_frame_light=0x7f0700b3;
+    public static final int welcome_page=0x7f0700b4;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

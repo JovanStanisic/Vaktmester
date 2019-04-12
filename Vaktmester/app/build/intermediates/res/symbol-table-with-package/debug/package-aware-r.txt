@@ -1125,6 +1125,7 @@ drawable roundspinner
 drawable search
 drawable settings
 drawable supplier
+drawable ticket_filter_round_checked
 drawable ticket_round_corners
 drawable tooltip_frame_dark
 drawable tooltip_frame_light

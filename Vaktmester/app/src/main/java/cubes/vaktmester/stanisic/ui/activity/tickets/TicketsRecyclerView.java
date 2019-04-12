@@ -34,7 +34,7 @@ public class TicketsRecyclerView extends AppCompatActivity {
         private ImageView imageViewBack;
         private TextView activeFilters;
         private boolean isDragged;
-        private int result;
+        public static boolean [] checkList;
         @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -135,6 +135,9 @@ public class TicketsRecyclerView extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 0){
             if(resultCode == Activity.RESULT_OK) {
+                if (data != null) {
+                    checkList = data.getBooleanArrayExtra("checklist");
+                }
                 Toast.makeText(this,"on activity result",Toast.LENGTH_LONG).show();
                 activeFilters.setVisibility(View.VISIBLE);
                 recyclerViewFilters.setVisibility(View.VISIBLE);

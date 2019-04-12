@@ -11,6 +11,7 @@ public class DataContainer {
     public static ArrayList<SettingsItem> priority;
     public static ArrayList<SettingsItem> category;
 
+    public static boolean [] checked;
 
     public static boolean isChecked(int j){
 
@@ -45,4 +46,14 @@ public class DataContainer {
         }
         return false;
     }
+
+    public static boolean [] checkedList(){
+        checked = new boolean[3];
+
+        for(int i = 0; i < checked.length; i++){
+            checked[i] = isChecked(i);
+        }
+        return checked;
+    }
+
 }

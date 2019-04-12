@@ -33,7 +33,7 @@ public class FiltersActivity extends AppCompatActivity {
         addListener();
         adapter = new FiltersExpandableListAdapter(getApplicationContext());
         expListView.setAdapter(adapter);
-
+        returnIntent();
     }
 
     private void addListener() {
@@ -50,6 +50,7 @@ public class FiltersActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent returnIntent = new Intent();
+                returnIntent.putExtra("checklist", DataContainer.checkedList());
                 setResult(Activity.RESULT_OK,returnIntent);
                 finish();
             }
@@ -84,6 +85,11 @@ public class FiltersActivity extends AppCompatActivity {
 
     }
 
+    private void returnIntent(){
+        Intent returnIntent = new Intent();
+        returnIntent.putExtra("checklist", DataContainer.checkedList());
+        setResult(Activity.RESULT_OK,returnIntent);
+    }
 
     }
 

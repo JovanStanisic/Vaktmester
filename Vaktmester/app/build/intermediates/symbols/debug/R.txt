@@ -1124,10 +1124,11 @@ int drawable roundspinner 0x7f0700ac
 int drawable search 0x7f0700ad
 int drawable settings 0x7f0700ae
 int drawable supplier 0x7f0700af
-int drawable ticket_round_corners 0x7f0700b0
-int drawable tooltip_frame_dark 0x7f0700b1
-int drawable tooltip_frame_light 0x7f0700b2
-int drawable welcome_page 0x7f0700b3
+int drawable ticket_filter_round_checked 0x7f0700b0
+int drawable ticket_round_corners 0x7f0700b1
+int drawable tooltip_frame_dark 0x7f0700b2
+int drawable tooltip_frame_light 0x7f0700b3
+int drawable welcome_page 0x7f0700b4
 int id ALT 0x7f080000
 int id CTRL 0x7f080001
 int id FUNCTION 0x7f080002
