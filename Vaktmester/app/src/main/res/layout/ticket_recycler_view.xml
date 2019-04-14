@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Blue">
+
+    <TextView android:id="@+id/ticketName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#1 - Ticket name"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <TextView android:id="@+id/textViewCreated"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_view_prompt_created"
+        android:textColor="@color/blueGrayish"
+        android:textSize="14sp"
+        android:layout_below="@id/ticketName"
+        android:layout_alignStart="@+id/ticketName"
+        android:layout_marginTop="4dp"/>
+
+
+    <TextView android:id="@+id/textViewStatus"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_status"
+        android:textColor="@color/blueGrayish"
+        android:textSize="14sp"
+        android:layout_below="@+id/textViewCreated"
+        android:layout_alignStart="@id/textViewCreated"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"/>
+
+
+    <TextView
+        android:id="@+id/textViewStarted"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ticketName"
+        android:layout_alignBaseline="@+id/textViewCreated"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/textViewCreated"
+        android:text="@string/prompt_started"
+        android:textColor="@color/blueGrayish"
+        android:textSize="14sp"
+        android:gravity="end"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView android:id="@+id/textViewPriority"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_priority"
+        android:textColor="@color/blueGrayish"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"
+        android:layout_below="@+id/textViewStarted"
+        android:layout_alignStart="@+id/textViewStarted"
+        android:layout_marginEnd="16dp"
+        android:gravity="end"/>
+
+</RelativeLayout>
