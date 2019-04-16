@@ -1,4 +1,4 @@
-package cubes.vaktmester.stanisic.ui.adapter;
+package cubes.vaktmester.stanisic.ui.adapter.spinner;
 
 import android.content.Context;
 import android.database.DataSetObserver;

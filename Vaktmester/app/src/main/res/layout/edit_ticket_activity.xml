@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue"
+    android:orientation="vertical">
+
+    <LinearLayout android:id="@+id/linearHeader"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView android:id="@+id/imageViewBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_ticket"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    
+    <ScrollView android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp">
+        
+        <LinearLayout android:id="@+id/scrollLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            
+            <EditText android:id="@+id/editTextTaskName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:hint="@string/task_name"
+                android:textColorHint="@color/blueGrayish"
+                android:paddingLeft="20dp"
+                android:background="@drawable/edit_text_gray_border"
+                android:textColor="@color/white"/>
+
+            <EditText android:id="@+id/editTextTaskDesc"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="18dp"
+                android:hint="@string/write_description"
+                android:textColorHint="@color/blueGrayish"
+                android:background="@drawable/edit_text_gray_border"
+                android:gravity="top"
+                android:paddingLeft="20dp"
+                android:paddingTop="12dp"
+                android:textColor="@color/white"/>
+
+            <FrameLayout android:id="@+id/frameLayoutBorretslag"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:background="@drawable/roundspinner"
+                android:padding="3dp">
+
+                <Spinner
+                    android:id="@+id/spinnerBorretslag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="12dp">
+                </Spinner>
+
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/frameLayoutBuilding"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:background="@drawable/roundspinner"
+                android:padding="3dp">
+
+                <Spinner
+                    android:id="@+id/spinnerBuilding"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="12dp">
+                </Spinner>
+
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/frameLayoutPriority"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:background="@drawable/roundspinner"
+                android:padding="3dp">
+
+                <Spinner
+                    android:id="@+id/spinnerPriority"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="12dp">
+                </Spinner>
+
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frameLayoutCategory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:background="@drawable/roundspinner"
+                android:padding="3dp">
+
+                <Spinner
+                    android:id="@+id/spinnerCategory"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:paddingLeft="12dp">
+                </Spinner>
+
+            </FrameLayout>
+
+            <FrameLayout android:id="@+id/frameLayoutDateAdded"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="18dp">
+
+                <TextView android:id="@+id/textViewDateAdded"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="@string/date_added_edit_ticket"
+                    android:layout_gravity="center|left"
+                    android:background="@drawable/roundspinner"
+                    android:gravity="center|left"
+                    android:paddingLeft="20dp"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_date"/>
+            </FrameLayout>
+
+
+
+            
+        </LinearLayout>
+        
+    </ScrollView>
+
+</LinearLayout>
