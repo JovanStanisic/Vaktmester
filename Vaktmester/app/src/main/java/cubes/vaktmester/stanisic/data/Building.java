@@ -13,7 +13,7 @@ public class Building implements Serializable {
     public int tasksCount;
     public String contactName;
     public String contactPhone;
-    public String borettslagName;
+//    public String borettslagName;
     public String buildingName;
 
     //konstruktor za listvju item

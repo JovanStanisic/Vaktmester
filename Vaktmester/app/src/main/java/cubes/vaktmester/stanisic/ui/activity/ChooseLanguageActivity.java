@@ -2,18 +2,16 @@ package cubes.vaktmester.stanisic.ui.activity;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 import cubes.vaktmester.stanisic.R;
 import cubes.vaktmester.stanisic.data.SharedPrefs;
-import cubes.vaktmester.stanisic.ui.adapter.LanguageAdapter;
+import cubes.vaktmester.stanisic.ui.adapter.spinner.LanguageAdapter;
 
 public class ChooseLanguageActivity extends Activity {
         private TextView textViewChooseLanguage;

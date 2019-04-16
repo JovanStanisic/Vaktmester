@@ -1,6 +1,7 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\stana\\Desktop\\Vaktmester\\Vaktmester\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
@@ -15,6 +16,12 @@
                 },
                 {
                     "source": "C:\\Users\\stana\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\6f282bffa6903572a1ca1da907cfd187\\res\\values-v24\\values-v24.xml",
+=======
+            "outputFile": "/home/android/AndroidStudioProjects/Vaktmester/Vaktmester/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "map": [
+                {
+                    "source": "/home/android/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/c579667e6be16cd861b8b39aeddbead2/res/values-v24/values-v24.xml",
+>>>>>>> 9405b4774d9256ebb0afae69104d888cdcee1d06
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -29,6 +36,19 @@
                         "endColumns": "65,60,65,66",
                         "endOffsets": "408,469,535,602"
                     }
+<<<<<<< HEAD
+=======
+                },
+                {
+                    "source": "/home/android/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ded9932c43da5e02be5d66df6f029460/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+>>>>>>> 9405b4774d9256ebb0afae69104d888cdcee1d06
                 }
             ]
         }

@@ -127,6 +127,13 @@ public class TicketsRecyclerView extends AppCompatActivity {
                 }
         });
 
+        floatAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(TicketsRecyclerView.this,EditTicketActivity.class));
+            }
+        });
+
     }
 
     @Override

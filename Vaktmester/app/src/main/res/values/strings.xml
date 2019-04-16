@@ -51,5 +51,13 @@
     <string name="filter_adapter_status">Status</string>
     <string name="filter_adapter_priority">Priority</string>
     <string name="filter_adapter_category">Category</string>
+    <string name="edit_ticket">Edit ticket</string>
+    <string name="task_name">Task name</string>
+    <string name="write_description">Write description</string>
+    <string name="spinner_borretslag">Borretslag name</string>
+    <string name="building_name_spinner">Building name</string>
+    <string name="spinner_item_priority">Priority: </string>
+    <string name="category_spinner">Category: </string>
+    <string name="date_added_edit_ticket">Date added:</string>
 
 </resources>
