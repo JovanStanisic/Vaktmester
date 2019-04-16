@@ -33,7 +33,6 @@ public class TicketsRecyclerView extends AppCompatActivity {
         private ArrayList<String> filters;
         private ImageView imageViewBack;
         private TextView activeFilters;
-        private boolean isDragged;
         public static boolean [] checkList;
         @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
