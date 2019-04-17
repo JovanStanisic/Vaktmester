@@ -62,6 +62,7 @@
         <activity android:name=".ui.activity.tickets.TicketsRecyclerView" />
         <activity android:name=".ui.activity.tickets.FiltersActivity" />
         <activity android:name=".ui.activity.tickets.EditTicketActivity" />
+        <activity android:name=".ui.activity.TimeSheetActivity" />
     </application>
 
 </manifest>

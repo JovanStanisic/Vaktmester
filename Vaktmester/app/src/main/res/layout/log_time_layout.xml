@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Blue">
+
+    <LinearLayout android:id="@+id/linearHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView android:id="@+id/imageViewBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/log_time"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:textSize="24dp"/>
+
+    </LinearLayout>
+
+    <FrameLayout android:id="@+id/frameLayoutTicketName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/roundspinner"
+        android:padding="3dp"
+        android:layout_below="@+id/linearHeader">
+
+    <Spinner
+        android:id="@+id/spinnerTicketName"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/white"
+        android:paddingLeft="12dp">
+    </Spinner>
+
+    </FrameLayout>
+
+    <FrameLayout android:id="@+id/frameLayoutBorretslag"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/roundspinner"
+        android:padding="3dp"
+        android:layout_below="@+id/frameLayoutTicketName">
+
+        <Spinner
+            android:id="@+id/spinnerBorretslag"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="12dp">
+        </Spinner>
+
+    </FrameLayout>
+
+    <FrameLayout android:id="@+id/frameLayoutBuildingName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/roundspinner"
+        android:padding="3dp"
+        android:layout_below="@+id/frameLayoutBorretslag">
+
+        <Spinner
+            android:id="@+id/spinnerBuildingName"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="12dp">
+        </Spinner>
+
+    </FrameLayout>
+
+    <FrameLayout android:id="@+id/frameLayoutDateAdded"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/frameLayoutBuildingName">
+
+        <TextView android:id="@+id/textViewDateAdded"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="@string/date_added_edit_ticket"
+            android:layout_gravity="center|left"
+            android:background="@drawable/roundspinner"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_date"/>
+    </FrameLayout>
+
+    <TextView android:id="@+id/logTimeHoursMins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_time_hours_mins"
+        android:textColor="@color/blueGrayish"
+        android:textSize="14sp"
+        android:layout_below="@+id/frameLayoutDateAdded"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView android:id="@+id/textViewHours"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/zero_zero"
+        android:background="@drawable/edit_text_gray_border"
+        android:gravity="center"
+        android:layout_below="@+id/logTimeHoursMins"
+        android:layout_marginLeft="26dp"/>
+
+    <TextView android:id="@+id/textViewMins"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/zero_zero"
+        android:background="@drawable/edit_text_gray_border"
+        android:gravity="center"
+        android:layout_below="@+id/logTimeHoursMins"
+        android:layout_toRightOf="@+id/textViewHours"
+        android:layout_marginLeft="16dp"/>
+
+    <EditText android:id="@+id/editTextComment"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="26dp"
+        android:hint="@string/write_comment_log"
+        android:textColorHint="@color/blueGrayish"
+        android:background="@drawable/edit_text_gray_border"
+        android:gravity="top"
+        android:paddingLeft="20dp"
+        android:paddingTop="12dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/textViewHours"/>
+
+    <TextView android:id="@+id/textSpentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextComment"
+        android:textSize="14sp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/log_total_time"
+        android:textColor="@color/blueGrayish"/>
+
+    <TextView android:id="@+id/textViewSpentTime"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/spent_time_log"
+        android:background="@drawable/roundspinner"
+        android:layout_below="@+id/textSpentTime"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="26dp"/>
+    
+    <Button android:id="@+id/reportButton"
+        android:layout_width="146dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundbutton"
+        android:text="@string/report_button_log"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/textViewSpentTime"
+        android:layout_below="@+id/textSpentTime"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"/>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabCancel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="28dp"
+        android:backgroundTint="@color/Orange"
+        android:src="@drawable/ic_clear"
+        app:fabCustomSize="50dp"
+        app:maxImageSize="36dp"
+        app:borderWidth="0dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSave"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="28dp"
+        android:backgroundTint="@color/Orange"
+        android:src="@drawable/ic_check"
+        app:fabCustomSize="50dp"
+        app:maxImageSize="36dp"
+        app:borderWidth="0dp"/>
+
+</RelativeLayout>

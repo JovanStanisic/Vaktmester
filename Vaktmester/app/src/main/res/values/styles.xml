@@ -7,11 +7,22 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/white</item>
         <item name="android:popupMenuStyle"> @style/PopupMenu </item>
+        <item name="android:datePickerDialogTheme">@style/DatePicker</item>
     </style>
 
     <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
         <item name="android:popupBackground">@color/Blue</item>
         <item name="android:textColor">@color/white</item>
+    </style>
+
+   <style name="DatePicker" parent="android:Theme.Material.Light.Dialog">
+       <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+       <item name="android:colorAccent">@color/date_picker_accent</item>
+   </style>
+
+    <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.Light.DatePicker">
+        <item name="android:headerBackground">@color/Orange</item>
+        <item name="android:background">@color/Blue</item>
     </style>
 
 </resources>

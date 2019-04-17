@@ -56,8 +56,21 @@
     <string name="write_description">Write description</string>
     <string name="spinner_borretslag">Borretslag name</string>
     <string name="building_name_spinner">Building name</string>
-    <string name="spinner_item_priority">Priority: </string>
-    <string name="category_spinner">Category: </string>
+    <string name="spinner_item_priority">Priority:</string>
+    <string name="category_spinner">Category:</string>
     <string name="date_added_edit_ticket">Date added:</string>
+    <string name="date_created">Date created:</string>
+    <string name="date_ended">Date ended:</string>
+    <string name="status_spinner">Status:</string>
+    <string name="edit_ticket_created_by">Created By</string>
+    <string name="edit_task_updated_by">Updated By</string>
+    <string name="edit_ticket_estimated_time">Estimated Time</string>
+    <string name="log_time">Log time</string>
+    <string name="log_time_hours_mins">Log time: </string>
+    <string name="zero_zero">00</string>
+    <string name="write_comment_log">Write Comment</string>
+    <string name="log_total_time">Total Spent Time:</string>
+    <string name="spent_time_log">14 hours</string>
+    <string name="report_button_log">Report</string>
 
 </resources>

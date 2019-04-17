@@ -70,6 +70,13 @@ public class HomeActivity extends AppCompatActivity {
                 popupMenu.show();
             }
         });
+
+        relativeLayoutSheet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, TimeSheetActivity.class));
+            }
+        });
     }
 
     private void initComp() {

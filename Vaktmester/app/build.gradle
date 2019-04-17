@@ -14,10 +14,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-<<<<<<< HEAD
-=======
             signingConfig getSigningConfig()
->>>>>>> 9405b4774d9256ebb0afae69104d888cdcee1d06
         }
     }
 }
