@@ -17,15 +17,13 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Locale;
 
 import cubes.vaktmester.stanisic.R;
-import cubes.vaktmester.stanisic.data.Borettslag;
+import cubes.vaktmester.stanisic.data.model.Borettslag;
 import cubes.vaktmester.stanisic.data.DataContainer;
-import cubes.vaktmester.stanisic.data.SettingsItem;
+import cubes.vaktmester.stanisic.data.model.SettingsItem;
 import cubes.vaktmester.stanisic.fragment.DatePickerFragment;
 import cubes.vaktmester.stanisic.ui.adapter.spinner.BorretslagAdapter;
 import cubes.vaktmester.stanisic.ui.adapter.spinner.BuildingSpinnerAdapter;

@@ -2,8 +2,6 @@ package cubes.vaktmester.stanisic.ui.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.provider.ContactsContract;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +11,6 @@ import android.widget.TextView;
 
 import cubes.vaktmester.stanisic.R;
 import cubes.vaktmester.stanisic.data.DataContainer;
-import cubes.vaktmester.stanisic.data.SettingsItem;
 
 public class FiltersExpandableListAdapter extends BaseExpandableListAdapter {
 

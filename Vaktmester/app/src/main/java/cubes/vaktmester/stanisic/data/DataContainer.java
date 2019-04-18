@@ -2,6 +2,11 @@ package cubes.vaktmester.stanisic.data;
 
 import java.util.ArrayList;
 
+import cubes.vaktmester.stanisic.data.model.Borettslag;
+import cubes.vaktmester.stanisic.data.model.Building;
+import cubes.vaktmester.stanisic.data.model.SettingsItem;
+import cubes.vaktmester.stanisic.data.model.Ticket;
+
 public class DataContainer {
 
     public static ArrayList<Building> buildings;

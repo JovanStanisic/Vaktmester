@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import cubes.vaktmester.stanisic.BuildConfig;
 import cubes.vaktmester.stanisic.R;
+import cubes.vaktmester.stanisic.data.SharedPrefs;
 import cubes.vaktmester.stanisic.utils.animations.Animations;
 
 public class HomeActivity extends AppCompatActivity {
@@ -60,7 +61,11 @@ public class HomeActivity extends AppCompatActivity {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
 
-                        Toast.makeText(getApplicationContext(), "Popup menu item clicked", Toast.LENGTH_SHORT).show();
+                        if(item.getTitle().toString().equalsIgnoreCase("logout")){
+                            SharedPrefs.deleteToken(getApplicationContext());
+                            startActivity(new Intent(HomeActivity.this,LoginActivity.class));
+                            finish();
+                        }
 
                         return true;
                     }
@@ -77,6 +82,8 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this, TimeSheetActivity.class));
             }
         });
+
+
     }
 
     private void initComp() {

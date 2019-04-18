@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 import cubes.vaktmester.stanisic.R;
 import cubes.vaktmester.stanisic.data.DataContainer;
-import cubes.vaktmester.stanisic.data.SettingsItem;
+import cubes.vaktmester.stanisic.data.model.SettingsItem;
 import cubes.vaktmester.stanisic.ui.adapter.FiltersExpandableListAdapter;
 
 public class FiltersActivity extends AppCompatActivity {

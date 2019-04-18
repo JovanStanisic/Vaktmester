@@ -11,7 +11,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import cubes.vaktmester.stanisic.R;
-import cubes.vaktmester.stanisic.data.Building;
+import cubes.vaktmester.stanisic.data.model.Building;
 
 public class BuildingSpinnerAdapter extends ArrayAdapter<String> {
 

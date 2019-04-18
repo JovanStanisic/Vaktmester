@@ -2,7 +2,6 @@ package cubes.vaktmester.stanisic.ui.activity.tickets;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -10,7 +9,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -20,8 +18,7 @@ import java.util.ArrayList;
 
 import cubes.vaktmester.stanisic.R;
 import cubes.vaktmester.stanisic.data.DataContainer;
-import cubes.vaktmester.stanisic.data.SettingsItem;
-import cubes.vaktmester.stanisic.data.Ticket;
+import cubes.vaktmester.stanisic.data.model.Ticket;
 import cubes.vaktmester.stanisic.ui.adapter.rv.RecyclerViewAdapterFilters;
 import cubes.vaktmester.stanisic.ui.adapter.rv.RecyclerViewAdapterTickets;
 

@@ -9,10 +9,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import cubes.vaktmester.stanisic.R;
+import cubes.vaktmester.stanisic.data.SharedPrefs;
+import cubes.vaktmester.stanisic.data.response.LoginModel;
+import cubes.vaktmester.stanisic.networking.RetrofitHttpClient;
 import cubes.vaktmester.stanisic.utils.animations.DepthTransformation;
 import cubes.vaktmester.stanisic.ui.adapter.IntroPagerAdapter;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity {
         private ViewPager viewPager;
@@ -50,8 +57,27 @@ public class LoginActivity extends AppCompatActivity {
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, HomeActivity.class));
-                finish();
+
+                RetrofitHttpClient.getApiClient().login(editTextUser.getText().toString(),editTextPass.getText().toString()).enqueue(new Callback<LoginModel>() {
+                    @Override
+                    public void onResponse(Call<LoginModel> call, Response<LoginModel> response) {
+                        if(response.body().success){
+                            SharedPrefs.saveToken(getApplicationContext(),response.body().data);
+                            //idem na mejn
+                            startActivity(new Intent(LoginActivity.this,HomeActivity.class));
+                            finish();
+                        }
+                        else {
+                            Toast.makeText(getApplicationContext(),response.body().message,Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<LoginModel> call, Throwable t) {
+
+                    }
+                });
+
             }
         });
 

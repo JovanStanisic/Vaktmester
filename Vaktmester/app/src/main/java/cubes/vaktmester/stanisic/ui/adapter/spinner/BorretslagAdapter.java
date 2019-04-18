@@ -11,7 +11,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import cubes.vaktmester.stanisic.R;
-import cubes.vaktmester.stanisic.data.Borettslag;
+import cubes.vaktmester.stanisic.data.model.Borettslag;
 
 public class BorretslagAdapter extends ArrayAdapter<String> {
 

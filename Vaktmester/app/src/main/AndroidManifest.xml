@@ -30,9 +30,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity
-            android:name=".ui.activity.BuildingMapActivity"
-            android:label="@string/title_activity_building_map"></activity>
+
         <activity
             android:name=".ui.activity.LoadingActivity"
             android:screenOrientation="portrait">
@@ -42,6 +40,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.activity.BuildingMapActivity"
+            android:label="@string/title_activity_building_map"></activity>
         <activity
             android:name=".ui.activity.ChooseLanguageActivity"
             android:screenOrientation="portrait" />

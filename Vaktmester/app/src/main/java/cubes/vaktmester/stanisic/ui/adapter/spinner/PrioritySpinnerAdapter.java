@@ -2,24 +2,20 @@ package cubes.vaktmester.stanisic.ui.adapter.spinner;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.graphics.Color;
-import android.support.v4.content.ContextCompat;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
 import cubes.vaktmester.stanisic.R;
-import cubes.vaktmester.stanisic.data.SettingsItem;
+import cubes.vaktmester.stanisic.data.model.SettingsItem;
 
 public class PrioritySpinnerAdapter extends ArrayAdapter<String> {
 

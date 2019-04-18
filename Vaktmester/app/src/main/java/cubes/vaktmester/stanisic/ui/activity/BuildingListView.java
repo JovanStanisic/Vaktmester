@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import cubes.vaktmester.stanisic.R;
 
 import cubes.vaktmester.stanisic.utils.animations.Animations;
-import cubes.vaktmester.stanisic.data.Building;
+import cubes.vaktmester.stanisic.data.model.Building;
 import cubes.vaktmester.stanisic.data.DataContainer;
 import cubes.vaktmester.stanisic.ui.adapter.BuildingsAdapter;
 

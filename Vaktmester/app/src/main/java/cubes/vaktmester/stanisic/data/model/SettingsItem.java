@@ -1,4 +1,4 @@
-package cubes.vaktmester.stanisic.data;
+package cubes.vaktmester.stanisic.data.model;
 
 public class SettingsItem {
     public String id;

@@ -10,7 +10,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import cubes.vaktmester.stanisic.R;
-import cubes.vaktmester.stanisic.data.Ticket;
+import cubes.vaktmester.stanisic.data.model.Ticket;
 import cubes.vaktmester.stanisic.utils.SpannableUtil;
 
 public class RecyclerViewAdapterTickets extends RecyclerView.Adapter<RecyclerViewAdapterTickets.TicketViewHolder> {
